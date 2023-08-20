@@ -39,14 +39,10 @@ try {
 		$("button").on('click',function(){
 			const idUser = $(this).closest('div').attr('id');
 			const product = $(this).closest('.card');
-            product.remove();
+                        product.remove();
 			localStorage.removeItem(idUser);
-		    
-		   
 		});
 	});
-
-	
 
 } catch (error) {
 
